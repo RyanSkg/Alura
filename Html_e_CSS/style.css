@@ -1,7 +1,31 @@
-body {
-    background-color: black;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
+* {
+  margin: 0;
+  padding: 0;
 }
-strong {
-    color: #22D4FD;
+body {
+  height: auto;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+.titutlo_destaque {
+  color: #22d4fd;
+}
+.apresentacao {
+  margin: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.apresentacao_conteudo {
+  width: 615px;
+}
+.apresentacao_conteudo_titulo {
+  font-size: 36px;
+  font-family: krona one, sans-serif;
+}
+.apresentacao_conteudo_texto {
+  font-size: 24px;
+  font-family: Montserrat, sans-serif;
 }
