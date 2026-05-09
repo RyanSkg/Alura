@@ -125,6 +125,7 @@ main {
     gap: 80px;
 }
 .cabecalho_menu_link {
+    text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 600;
