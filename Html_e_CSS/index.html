@@ -1,62 +1,90 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Author" content="Ryan Sá" />
+    <meta name="author" content="Ryan Sá" />
     <meta
-      name="Description"
-      content="Portifólio de Ryan Sá, um desenvolvedor web apaixonado por criar soluções inovadoras e eficientes. Com uma sólida experiência em desenvolvimento front-end e back-end."
+      name="description"
+      content="Portfólio de Ryan Sá, um desenvolvedor web apaixonado por criar soluções inovadoras e eficientes. Com uma sólida experiência em desenvolvimento front-end e back-end."
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Portifólio</title>
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <title>Portfólio — Ryan Sá</title>
   </head>
   <body>
-    <header></header>
-    <main class="apresentacao">
-      <section class="apresentacao_conteudo">
-        <h1 class="apresentacao_conteudo_titulo">
-          Eleve seu negócio digital a outro nível
-          <strong class="titulo_destaque">
-            com um Front-end de qualidade</strong
-          >
-        </h1>
-        <p class="apresentacao_conteudo_texto">
-          Olá! Sou Ryan Sá, desenvolvedor front-end com especialidade em
-          Angular, HTML e CSS. Ajudo pequenos negócios e designers a colocarem
-          em prática boas ideias. Vamos conversar?
-        </p>
-        <div class="apresentacao_links">
-          <h2 class="apresentacao_links_subtitulo">Acesse minhas Redes</h2>
-          <a
-            class="apresentacao_links_links"
-            href="https://github.com/RyanSkg"
-            target="_blank"
-          >
-            <img class="apresentacao_links_imagem" src="\assets\github.png" alt="GitHub" width="40" /> GitHub</a
-          >
-          <a
-            class="apresentacao_links_links"
-            href="https://www.linkedin.com/in/ryansá"
-            target="_blank"
-            ><img class="apresentacao_links_imagem" src="\assets\linkedin.png" alt="LinkedIn" width="40" /> LinkedIn</a
-          >
-          <a
-            class="apresentacao_links_links"
-            href="https://www.instagram.com/sadev.io?igsh=a3l5Z2owMGpmZ2h2"
-            target="_blank"
-            ><img class="apresentacao_links_imagem" src="\assets\instagram.png" alt="Instagram" width="40" /> Instagram</a
-          >
+    <header class="cabecalho">
+      <nav class="cabecalho_menu">
+        <a class="cabecalho_menu_link" href="#apresentacao">HOME</a>
+        <a class="cabecalho_menu_link" href="#sobre-mim">SOBRE MIM</a>
+      </nav>
+    </header>
+    <main>
+      <section class="apresentacao" id="apresentacao">
+        <div class="apresentacao_conteudo">
+          <h1 class="apresentacao_conteudo_titulo">
+            Eleve seu negócio digital a outro nível
+            <strong class="titulo-destaque">
+              com um Front-end de qualidade</strong
+            >
+          </h1>
+          <p class="apresentacao_conteudo_texto">
+            Olá! Sou Ryan Sá, desenvolvedor front-end com especialidade em
+            Angular, HTML e CSS. Ajudo pequenos negócios e designers a colocarem
+            em prática boas ideias. Vamos conversar?
+          </p>
+          <div class="apresentacao_links">
+            <h2 class="apresentacao_links_subtitulo">Acesse minhas Redes</h2>
+            <a
+              class="apresentacao_links_links"
+              href="https://github.com/RyanSkg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="apresentacao_links_imagem"
+                src="./assets/github.png"
+                alt="GitHub"
+                width="40"
+              />
+              GitHub
+            </a>
+            <a
+              class="apresentacao_links_links"
+              href="https://www.linkedin.com/in/ryansá"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="apresentacao_links_imagem"
+                src="./assets/linkedin.png"
+                alt="LinkedIn"
+                width="40"
+              />
+              LinkedIn
+            </a>
+            <a
+              class="apresentacao_links_links"
+              href="https://www.instagram.com/sadev.io?igsh=a3l5Z2owMGpmZ2h2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="apresentacao_links_imagem"
+                src="./assets/instagram.png"
+                alt="Instagram"
+                width="40"
+              />
+              Instagram
+            </a>
+          </div>
         </div>
+        <img
+          src="./assets/perfil.jpg"
+          alt="Foto de perfil de Ryan Sá"
+          class="apresentacao_imagem"
+        />
       </section>
-      <img
-        src="\assets\perfil.jpg"
-        alt="Foto de perfil de Ryan Sá"
-        width="200"
-        class="apresentacao_imagem"
-      />
-      <!-- Imagem de teste para perfil de Ryan Sá -->
     </main>
     <footer class="rodape">Desenvolvido por Ryan Sá</footer>
   </body>
