@@ -1,31 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
-* {
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-  height: auto;
-  box-sizing: border-box;
-  background-color: black;
-  color: white;
+    min-height: 100vh;
+    background-color: #000000;
+    color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
 }
-.titutlo_destaque {
-  color: #22d4fd;
+
+main {
+    flex: 1;
 }
+
+/* ── Utilitários ───────────────────────────────────────────── */
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+/* ── Apresentação ──────────────────────────────────────────── */
+
 .apresentacao {
-  margin: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    margin: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
+
+.apresentacao_imagem {
+    width: 600px;
+    height: 600px;
+    border-radius: 10%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
 .apresentacao_conteudo {
-  width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 780px;
 }
+
 .apresentacao_conteudo_titulo {
-  font-size: 36px;
-  font-family: krona one, sans-serif;
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
 }
+
 .apresentacao_conteudo_texto {
-  font-size: 24px;
-  font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+/* ── Links / Redes sociais ─────────────────────────────────── */
+
+.apresentacao_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao_links_subtitulo {
+    font-size: 24px;
+    font-family: 'Krona One', sans-serif;
+    color: #ffffff;
+}
+
+.apresentacao_links_imagem {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.apresentacao_links_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 378px;
+    border-radius: 16px;
+    border: 2px solid #22D4FD;
+    padding: 21.5px 0;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.apresentacao_links_links:hover {
+    background-color: #272727;
+}
+
+/* ── Rodapé ────────────────────────────────────────────────── */
+
+.rodape {
+    color: #000000;
+    background-color: #22D4FD;
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
