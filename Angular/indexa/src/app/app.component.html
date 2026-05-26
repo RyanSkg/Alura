@@ -1,0 +1,10 @@
+<app-container>
+  <app-cabecalho></app-cabecalho>
+
+  @for (letra of alfabeto; track letra) {
+    <app-separador>
+      {{ letra }}
+    </app-separador>
+    <app-contato></app-contato>
+  }
+</app-container>
